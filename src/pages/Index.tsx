@@ -15,10 +15,11 @@ import beforeAfterBathroom from "@/assets/before-after-bathroom.jpg";
 const services = [
   {
     title: "Bathroom Remodeling",
-    description: "Transform your bathroom into a spa-like retreat. From refreshes starting at $15K to full gut renovations.",
+    description:
+      "Transform your bathroom into a spa-like retreat. From refreshes starting at $15K to full gut renovations.",
     image: heroBathroom,
     href: "/bathroom-remodeling",
-    price: "Starting at $15,000",
+    price: "Starting at $12,000",
   },
   {
     title: "Kitchen Remodeling",
@@ -58,8 +59,16 @@ const testimonials = [
 ];
 
 const towns = [
-  "Bridgewater", "Hillsborough", "Warren", "Somerville", "Basking Ridge",
-  "Bernardsville", "Watchung", "Green Brook", "Bound Brook", "Raritan"
+  "Bridgewater",
+  "Hillsborough",
+  "Warren",
+  "Somerville",
+  "Basking Ridge",
+  "Bernardsville",
+  "Watchung",
+  "Green Brook",
+  "Bound Brook",
+  "Raritan",
 ];
 
 export default function Index() {
@@ -68,14 +77,11 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative pt-20 min-h-[90vh] flex items-center">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBathroom})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroBathroom})` }}>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/40" />
         </div>
 
@@ -92,30 +98,24 @@ export default function Index() {
             </div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-slide-up">
-              Premier Home Remodeling in{" "}
-              <span className="text-accent">Somerset County</span>
+              Premier Home Remodeling in <span className="text-accent">Somerset County</span>
             </h1>
 
-            <p className="text-xl text-white/80 mb-8 leading-relaxed animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              Bathroom, kitchen, and basement transformations done right. 
-              Licensed & insured. Clear scopes. No surprises.
+            <p
+              className="text-xl text-white/80 mb-8 leading-relaxed animate-slide-up"
+              style={{ animationDelay: "0.1s" }}
+            >
+              Bathroom, kitchen, and basement transformations done right. Licensed & insured. Clear scopes. No
+              surprises.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <Button 
-                variant="goldLarge" 
-                size="xl"
-                onClick={() => setIsPricingModalOpen(true)}
-              >
+              <Button variant="goldLarge" size="xl" onClick={() => setIsPricingModalOpen(true)}>
                 Get Pricing Range
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <Button 
-                variant="outlineWhite" 
-                size="xl"
-                asChild
-              >
+              <Button variant="outlineWhite" size="xl" asChild>
                 <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
                   <Calendar className="w-5 h-5" />
                   Book 15-Min Fit Call
@@ -142,8 +142,8 @@ export default function Index() {
         </div>
 
         {/* Phone CTA */}
-        <a 
-          href="tel:+19085551234" 
+        <a
+          href="tel:+19085551234"
           className="fixed bottom-6 right-6 z-40 bg-accent hover:brightness-90 text-accent-foreground rounded-full p-4 shadow-lg md:hidden transition-all"
           aria-label="Call us"
         >
@@ -166,20 +166,21 @@ export default function Index() {
               Our Remodeling Services
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive home transformation services with transparent pricing, clear scopes, and expert craftsmanship.
+              Comprehensive home transformation services with transparent pricing, clear scopes, and expert
+              craftsmanship.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Link 
+              <Link
                 key={service.href}
                 to={service.href}
                 className="group relative overflow-hidden rounded-2xl bg-white shadow-elegant hover:shadow-xl transition-all duration-300"
               >
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img 
-                    src={service.image} 
+                  <img
+                    src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -209,18 +210,24 @@ export default function Index() {
                 See the <span className="text-accent">Transformation</span>
               </h2>
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-                We specialize in turning outdated spaces into stunning, functional rooms that add value to your home and joy to your daily life.
+                We specialize in turning outdated spaces into stunning, functional rooms that add value to your home and
+                joy to your daily life.
               </p>
               <ul className="space-y-4 mb-8">
                 {[
                   "Complete design through completion management",
                   "All permits pulled and inspections coordinated",
                   "Clear scope documents - no hidden costs",
-                  "Dedicated project manager on every job"
+                  "Dedicated project manager on every job",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                      <svg className="w-4 h-4 text-accent-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-4 h-4 text-accent-foreground"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
@@ -233,8 +240,8 @@ export default function Index() {
               </Button>
             </div>
             <div className="relative">
-              <img 
-                src={beforeAfterBathroom} 
+              <img
+                src={beforeAfterBathroom}
                 alt="Before and after bathroom remodel"
                 className="rounded-xl shadow-2xl"
               />
@@ -247,9 +254,7 @@ export default function Index() {
       <section className="section-padding">
         <div className="container-custom mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              What Our Clients Say
-            </h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">What Our Clients Say</h2>
             <p className="text-muted-foreground">
               Hear from homeowners across Somerset County who trusted us with their renovations.
             </p>
@@ -298,26 +303,17 @@ export default function Index() {
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-br from-primary via-primary to-navy-dark text-primary-foreground">
         <div className="container-custom mx-auto text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Ready to Transform Your Home?
-          </h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Home?</h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Get transparent pricing for your project. No surprises, no hidden fees – just honest numbers for your remodeling project.
+            Get transparent pricing for your project. No surprises, no hidden fees – just honest numbers for your
+            remodeling project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              variant="goldLarge" 
-              size="xl"
-              onClick={() => setIsPricingModalOpen(true)}
-            >
+            <Button variant="goldLarge" size="xl" onClick={() => setIsPricingModalOpen(true)}>
               Get Your Pricing Range
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button 
-              variant="outlineWhite" 
-              size="xl"
-              asChild
-            >
+            <Button variant="outlineWhite" size="xl" asChild>
               <a href="tel:+19085551234">
                 <Phone className="w-5 h-5" />
                 (908) 555-1234
@@ -329,10 +325,7 @@ export default function Index() {
 
       <Footer />
 
-      <PricingFormModal 
-        isOpen={isPricingModalOpen} 
-        onClose={() => setIsPricingModalOpen(false)} 
-      />
+      <PricingFormModal isOpen={isPricingModalOpen} onClose={() => setIsPricingModalOpen(false)} />
     </div>
   );
 }
