@@ -16,7 +16,7 @@ const services = [
   {
     title: "Bathroom Remodeling",
     description:
-      "Transform your bathroom into a spa-like retreat. From refreshes starting at $15K to full gut renovations.",
+      "Transform your bathroom into a spa-like retreat. From refreshes starting at $12K to full gut renovations.",
     image: heroBathroom,
     href: "/bathroom-remodeling",
     price: "Starting at $12,000",
