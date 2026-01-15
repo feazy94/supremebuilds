@@ -17,7 +17,7 @@ const tiers = [
   {
     tier: "refresh" as const,
     title: "Refresh Bathroom",
-    priceRange: "$15K – $20K",
+    priceRange: "$12K – $20K",
     description: "Basic updates to modernize your existing bathroom",
     features: [
       "New vanity and fixtures up to $2,500 allowance",
@@ -27,10 +27,7 @@ const tiers = [
       "New mirrors and accessories",
       "Existing layout maintained",
     ],
-    notIncluded: [
-      "Tile replacement",
-      "Plumbing relocation",
-    ],
+    notIncluded: ["Tile replacement", "Plumbing relocation"],
   },
   {
     tier: "full" as const,
@@ -46,9 +43,7 @@ const tiers = [
       "Exhaust fan upgrade",
       "All permits and inspections included",
     ],
-    notIncluded: [
-      "Structural changes",
-    ],
+    notIncluded: ["Structural changes"],
     popular: true,
   },
   {
@@ -71,46 +66,56 @@ const tiers = [
 const processSteps = [
   {
     title: "Project Fit Call",
-    description: "15-minute phone or video call to understand your vision, timeline, and budget. We'll tell you honestly if we're the right fit.",
+    description:
+      "15-minute phone or video call to understand your vision, timeline, and budget. We'll tell you honestly if we're the right fit.",
   },
   {
     title: "On-Site Evaluation",
-    description: "We visit your home to take measurements, assess existing conditions, and discuss detailed scope options.",
+    description:
+      "We visit your home to take measurements, assess existing conditions, and discuss detailed scope options.",
   },
   {
     title: "Selections + Proposal",
-    description: "You'll receive a detailed scope document with selections, allowances, and transparent pricing. No hidden costs.",
+    description:
+      "You'll receive a detailed scope document with selections, allowances, and transparent pricing. No hidden costs.",
   },
   {
     title: "Construction",
-    description: "Our dedicated project manager keeps you informed daily. All work fully permitted with inspections coordinated.",
+    description:
+      "Our dedicated project manager keeps you informed daily. All work fully permitted with inspections coordinated.",
   },
   {
     title: "Final Walkthrough",
-    description: "We review every detail together, address any punch list items, and provide your warranty documentation.",
+    description:
+      "We review every detail together, address any punch list items, and provide your warranty documentation.",
   },
 ];
 
 const faqs = [
   {
     question: "How long does a bathroom remodel take?",
-    answer: "Most bathroom remodels take 4-6 weeks from demolition to completion. Refresh projects can be completed in 2-3 weeks. We provide a detailed schedule before starting and keep you updated daily.",
+    answer:
+      "Most bathroom remodels take 3-6 weeks from demolition to completion. Refresh projects can be completed in 2-3 weeks. We provide a detailed schedule before starting and keep you updated daily.",
   },
   {
     question: "Do you handle all the permits?",
-    answer: "Yes! We pull all required permits and coordinate all inspections. You never have to visit the building department or wait around for an inspector – that's our job.",
+    answer:
+      "Yes! We pull all required permits and coordinate all inspections. You never have to visit the building department or wait around for an inspector – that's our job.",
   },
   {
     question: "What if I want to change something during construction?",
-    answer: "Changes happen, and we have a clear process for them. All change orders are documented in writing with exact pricing before any additional work begins. No surprises.",
+    answer:
+      "Changes happen, and we have a clear process for them. All change orders are documented in writing with exact pricing before any additional work begins. No surprises.",
   },
   {
     question: "What does 'allowance' mean in your pricing?",
-    answer: "Allowances are budgets for finish materials like tile, fixtures, and vanities. If you select items over the allowance, we discuss the difference before ordering. If you select less, we credit you back.",
+    answer:
+      "Allowances are budgets for finish materials like tile, fixtures, and vanities. If you select items over the allowance, we discuss the difference before ordering. If you select less, we credit you back.",
   },
   {
     question: "Can you work with my designer or architect?",
-    answer: "Absolutely. We work well with design professionals and can build from their plans. We also offer design assistance if you don't have a designer.",
+    answer:
+      "Absolutely. We work well with design professionals and can build from their plans. We also offer design assistance if you don't have a designer.",
   },
 ];
 
@@ -135,13 +140,10 @@ export default function BathroomRemodeling() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative pt-20 min-h-[70vh] flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBathroom})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroBathroom})` }}>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/40" />
         </div>
 
@@ -157,28 +159,20 @@ export default function BathroomRemodeling() {
             </div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Bathroom Remodeling in{" "}
-              <span className="text-accent">Somerset County, NJ</span>
+              Bathroom Remodeling in <span className="text-accent">Somerset County, NJ</span>
             </h1>
 
             <p className="text-xl text-white/80 mb-8 leading-relaxed">
-              From refreshes starting at $15K to full gut renovations. Licensed, insured, and committed to transparent pricing with no surprises.
+              From refreshes starting at $15K to full gut renovations. Licensed, insured, and committed to transparent
+              pricing with no surprises.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="goldLarge" 
-                size="xl"
-                onClick={() => setIsPricingModalOpen(true)}
-              >
+              <Button variant="goldLarge" size="xl" onClick={() => setIsPricingModalOpen(true)}>
                 Get Bathroom Pricing Range
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <Button 
-                variant="outlineWhite" 
-                size="xl"
-                asChild
-              >
+              <Button variant="outlineWhite" size="xl" asChild>
                 <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
                   <Calendar className="w-5 h-5" />
                   Book 15-Min Fit Call
@@ -202,11 +196,12 @@ export default function BathroomRemodeling() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Bathroom Remodeling Done{" "}
-                <span className="text-accent">Right</span>
+                Bathroom Remodeling Done <span className="text-accent">Right</span>
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Your bathroom should be more than functional – it should be a retreat. Whether you're looking for a quick refresh or a complete transformation, we deliver quality craftsmanship with clear communication every step of the way.
+                Your bathroom should be more than functional – it should be a retreat. Whether you're looking for a
+                quick refresh or a complete transformation, we deliver quality craftsmanship with clear communication
+                every step of the way.
               </p>
               <ul className="space-y-4 mb-8">
                 {[
@@ -226,8 +221,8 @@ export default function BathroomRemodeling() {
               </ul>
             </div>
             <div>
-              <img 
-                src={beforeAfterBathroom} 
+              <img
+                src={beforeAfterBathroom}
                 alt="Before and after bathroom remodel"
                 className="rounded-xl shadow-2xl"
               />
@@ -250,11 +245,7 @@ export default function BathroomRemodeling() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {tiers.map((tier) => (
-              <ScopeTierCard 
-                key={tier.tier}
-                {...tier}
-                onGetPricing={() => setIsPricingModalOpen(true)}
-              />
+              <ScopeTierCard key={tier.tier} {...tier} onGetPricing={() => setIsPricingModalOpen(true)} />
             ))}
           </div>
         </div>
@@ -292,9 +283,7 @@ export default function BathroomRemodeling() {
       <section className="section-padding bg-primary text-primary-foreground">
         <div className="container-custom mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              What Our Clients Say
-            </h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {testimonials.map((testimonial, index) => (
@@ -350,18 +339,12 @@ export default function BathroomRemodeling() {
       {/* Final CTA */}
       <section className="section-padding bg-gradient-to-br from-primary via-primary to-navy-dark text-primary-foreground">
         <div className="container-custom mx-auto text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Ready for Your Dream Bathroom?
-          </h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Ready for Your Dream Bathroom?</h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
             Get your personalized pricing range in 24 hours. No obligation, no pressure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              variant="goldLarge" 
-              size="xl"
-              onClick={() => setIsPricingModalOpen(true)}
-            >
+            <Button variant="goldLarge" size="xl" onClick={() => setIsPricingModalOpen(true)}>
               Get Bathroom Pricing Range
               <ArrowRight className="w-5 h-5" />
             </Button>
@@ -371,8 +354,8 @@ export default function BathroomRemodeling() {
 
       <Footer />
 
-      <PricingFormModal 
-        isOpen={isPricingModalOpen} 
+      <PricingFormModal
+        isOpen={isPricingModalOpen}
         onClose={() => setIsPricingModalOpen(false)}
         service="Bathroom Remodeling"
       />
