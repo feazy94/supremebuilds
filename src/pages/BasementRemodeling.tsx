@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowRight, Calendar, Star, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
@@ -86,6 +86,15 @@ const faqs = [
 
 export default function BasementRemodeling() {
   const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
+
+  useEffect(() => {
+    document.title = "Basement Finishing & Remodeling Somerset County NJ | From $20K | Supreme Builds";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Finish your basement with Supreme Builds. Entertainment spaces, home offices, and in-law suites starting at $20K. Licensed NJ contractor serving Somerset County. Get your pricing range now.");
+    return () => {
+      document.title = "Supreme Builds | Bathroom, Kitchen & Basement Remodeling in Somerset County, NJ";
+      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed home remodelers in Bridgewater NJ. Expert bathroom, kitchen, and basement transformations with transparent pricing and no surprises. Book a free 15-min fit call today!");
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
