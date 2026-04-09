@@ -94,6 +94,15 @@ const faqs = [
 export default function KitchenRemodeling() {
   const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
 
+  useEffect(() => {
+    document.title = "Kitchen Remodeling Somerset County NJ | Custom Kitchens from $25K | Supreme Builds";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Transform your kitchen with Supreme Builds. Custom cabinetry, quartz countertops, and modern designs starting at $25K. Licensed NJ contractor with transparent pricing. Get your quote today.");
+    return () => {
+      document.title = "Supreme Builds | Bathroom, Kitchen & Basement Remodeling in Somerset County, NJ";
+      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed home remodelers in Bridgewater NJ. Expert bathroom, kitchen, and basement transformations with transparent pricing and no surprises. Book a free 15-min fit call today!");
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
