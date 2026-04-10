@@ -26,7 +26,7 @@ export default function Privacy() {
             <p>We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or disclosure.</p>
 
             <h2>Contact Us</h2>
-            <p>If you have questions about this privacy policy, please contact us at info@supremebuilds.co or call (908) 555-1234.</p>
+            <p>If you have questions about this privacy policy, please contact us at info@supremebuilds.co or call (732) 347-8594.</p>
           </div>
         </div>
       </section>

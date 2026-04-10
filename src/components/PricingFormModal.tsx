@@ -139,7 +139,7 @@ export default function PricingFormModal({ isOpen, onClose, service, town }: Pri
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
-                    placeholder="(908) 555-1234"
+                    placeholder="(732) 347-8594"
                   />
                 </div>
               </div>

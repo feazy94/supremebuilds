@@ -184,7 +184,7 @@ export default function Index() {
 
         {/* Phone CTA */}
         <a
-          href="tel:+19085551234"
+          href="tel:+17323478594"
           className="fixed bottom-6 right-6 z-40 bg-accent hover:brightness-90 text-accent-foreground rounded-full p-4 shadow-lg md:hidden transition-all"
           aria-label="Call us"
         >
@@ -355,9 +355,9 @@ export default function Index() {
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button variant="outlineWhite" size="xl" asChild>
-              <a href="tel:+19085551234">
+              <a href="tel:+17323478594">
                 <Phone className="w-5 h-5" />
-                (908) 555-1234
+                (732) 347-8594
               </a>
             </Button>
           </div>

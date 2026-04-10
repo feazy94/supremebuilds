@@ -143,9 +143,9 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+19085551234" className="flex items-center gap-2 text-primary-foreground/90 hover:text-accent transition-colors">
+            <a href="tel:+17323478594" className="flex items-center gap-2 text-primary-foreground/90 hover:text-accent transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="font-medium">(908) 555-1234</span>
+              <span className="font-medium">(732) 347-8594</span>
             </a>
             <Button variant="gold" size="lg" asChild>
               <Link to="/contact">Get Pricing</Link>
@@ -216,9 +216,9 @@ export default function Header() {
               </div>
 
               <div className="border-t border-navy-light pt-4 space-y-3">
-                <a href="tel:+19085551234" className="flex items-center gap-2 text-primary-foreground">
+                <a href="tel:+17323478594" className="flex items-center gap-2 text-primary-foreground">
                   <Phone className="w-5 h-5" />
-                  <span>(908) 555-1234</span>
+                  <span>(732) 347-8594</span>
                 </a>
                 <Button variant="gold" className="w-full" asChild>
                   <Link to="/contact" onClick={() => setIsOpen(false)}>Get Pricing</Link>

@@ -74,7 +74,7 @@ export default function Contact() {
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium mb-2">Phone *</label>
                         <input type="tel" id="phone" name="phone" required value={formData.phone} onChange={handleChange}
-                          className="w-full px-4 py-3 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent" placeholder="(908) 555-1234" />
+                          className="w-full px-4 py-3 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent" placeholder="(732) 347-8594" />
                       </div>
                     </div>
 
@@ -131,9 +131,9 @@ export default function Contact() {
               <div className="bg-secondary rounded-xl p-6">
                 <h3 className="font-display text-xl font-semibold mb-6">Contact Information</h3>
                 <div className="space-y-4">
-                  <a href="tel:+19085551234" className="flex items-center gap-4 text-muted-foreground hover:text-accent transition-colors">
+                  <a href="tel:+17323478594" className="flex items-center gap-4 text-muted-foreground hover:text-accent transition-colors">
                     <Phone className="w-5 h-5 text-accent" />
-                    (908) 555-1234
+                    (732) 347-8594
                   </a>
                   <a href="mailto:info@supremebuilds.co" className="flex items-center gap-4 text-muted-foreground hover:text-accent transition-colors">
                     <Mail className="w-5 h-5 text-accent" />

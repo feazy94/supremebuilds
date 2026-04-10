@@ -41,9 +41,9 @@ export default function Footer() {
               Somerset County's trusted home remodeling experts. Licensed, insured, and committed to delivering exceptional craftsmanship.
             </p>
             <div className="space-y-3">
-              <a href="tel:+19085551234" className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors">
+              <a href="tel:+17323478594" className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors">
                 <Phone className="w-5 h-5 text-accent" />
-                (908) 555-1234
+                (732) 347-8594
               </a>
               <a href="mailto:info@supremebuilds.co" className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors">
                 <Mail className="w-5 h-5 text-accent" />
