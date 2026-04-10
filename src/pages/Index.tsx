@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useCanonical } from "@/hooks/useCanonical";
 import { ArrowRight, Star, Phone, Calendar, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
@@ -74,6 +75,46 @@ const towns = [
 
 export default function Index() {
   const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
+  useCanonical();
+
+  useEffect(() => {
+    document.title = "Home Remodeling Contractor | Somerset County NJ | Supreme Builds";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed general contractor serving Somerset & Middlesex County NJ. Kitchen remodeling, bathroom renovation & basement finishing. Supreme Builds Construction LLC.");
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "local-business-jsonld";
+    script.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Supreme Builds Construction LLC",
+      "url": "https://supremebuilds.co",
+      "telephone": "(732) 347-8594",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "81 S 15th Ave",
+        "addressLocality": "Manville",
+        "addressRegion": "NJ",
+        "postalCode": "08835",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "County", "name": "Somerset County, NJ" },
+        { "@type": "County", "name": "Middlesex County, NJ" }
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen Remodeling" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom Remodeling" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Basement Finishing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Additions" } }
+      ]
+    });
+    document.head.appendChild(script);
+
+    return () => {
+      document.getElementById("local-business-jsonld")?.remove();
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
