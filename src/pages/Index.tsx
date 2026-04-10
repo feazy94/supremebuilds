@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Star, Phone, Calendar, ChevronRight } from "lucide-react";
-import { ArrowRight, Star, Phone, Calendar, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -75,7 +74,7 @@ const towns = [
 
 export default function Index() {
   const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
-  useCanonical();
+  
 
   useEffect(() => {
     document.title = "Home Remodeling Contractor | Somerset County NJ | Supreme Builds";
