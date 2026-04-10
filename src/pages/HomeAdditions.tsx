@@ -98,8 +98,8 @@ export default function HomeAdditions() {
     document.title = "Home Addition Contractors in Somerset County, NJ | Supreme Builds";
     document.querySelector('meta[name="description"]')?.setAttribute("content", "Room additions, second stories & home expansions in Somerset & Middlesex County NJ. Licensed & insured. Supreme Builds. (732) 347-8594.");
     return () => {
-      document.title = "Supreme Builds | Bathroom, Kitchen & Basement Remodeling in Somerset County, NJ";
-      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed home remodelers in Bridgewater NJ. Expert bathroom, kitchen, and basement transformations with transparent pricing and no surprises. Book a free 15-min fit call today!");
+      document.title = "Home Remodeling Contractor | Somerset County NJ | Supreme Builds";
+      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed general contractor serving Somerset & Middlesex County NJ. Kitchen remodeling, bathroom renovation & basement finishing. Supreme Builds Construction LLC.");
     };
   }, []);
 

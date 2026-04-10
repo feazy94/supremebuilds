@@ -107,8 +107,8 @@ export default function CountyLandingPage({ county }: CountyLandingPageProps) {
     document.querySelector('meta[name="description"]')?.setAttribute("content", data.metaDescription);
 
     return () => {
-      document.title = "Supreme Builds | Bathroom, Kitchen & Basement Remodeling in Somerset County, NJ";
-      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed home remodelers in Bridgewater NJ. Expert bathroom, kitchen, and basement transformations with transparent pricing and no surprises. Book a free 15-min fit call today!");
+      document.title = "Home Remodeling Contractor | Somerset County NJ | Supreme Builds";
+      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed general contractor serving Somerset & Middlesex County NJ. Kitchen remodeling, bathroom renovation & basement finishing. Supreme Builds Construction LLC.");
     };
   }, [data]);
 

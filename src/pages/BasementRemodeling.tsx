@@ -91,8 +91,8 @@ export default function BasementRemodeling() {
     document.title = "Basement Finishing & Remodeling Somerset County NJ | From $20K | Supreme Builds";
     document.querySelector('meta[name="description"]')?.setAttribute("content", "Finish your basement with Supreme Builds. Entertainment spaces, home offices, and in-law suites starting at $20K. Licensed NJ contractor serving Somerset County. Get your pricing range now.");
     return () => {
-      document.title = "Supreme Builds | Bathroom, Kitchen & Basement Remodeling in Somerset County, NJ";
-      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed home remodelers in Bridgewater NJ. Expert bathroom, kitchen, and basement transformations with transparent pricing and no surprises. Book a free 15-min fit call today!");
+      document.title = "Home Remodeling Contractor | Somerset County NJ | Supreme Builds";
+      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed general contractor serving Somerset & Middlesex County NJ. Kitchen remodeling, bathroom renovation & basement finishing. Supreme Builds Construction LLC.");
     };
   }, []);
 
