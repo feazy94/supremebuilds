@@ -17,6 +17,7 @@ import LicensesInsurance from "./pages/LicensesInsurance";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import CountyLandingPage from "./pages/CountyLandingPage";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,10 @@ const App = () => (
           {towns.map((town) => (
             <Route key={`basement-${town}`} path={`/basement-remodeling-${town}-nj`} element={<TownLandingPage service="basement" town={town} />} />
           ))}
+          
+          {/* County Landing Pages */}
+          <Route path="/somerset-county-nj" element={<CountyLandingPage county="somerset" />} />
+          <Route path="/middlesex-county-nj" element={<CountyLandingPage county="middlesex" />} />
           
           <Route path="/our-process" element={<OurProcess />} />
           <Route path="/projects" element={<Projects />} />

@@ -10,6 +10,8 @@ const services = [
 ];
 
 const towns = [
+  { name: "Somerset County", href: "/somerset-county-nj" },
+  { name: "Middlesex County", href: "/middlesex-county-nj" },
   { name: "Bridgewater", href: "/bathroom-remodeling-bridgewater-nj" },
   { name: "Hillsborough", href: "/bathroom-remodeling-hillsborough-nj" },
   { name: "Warren", href: "/bathroom-remodeling-warren-nj" },
