@@ -141,8 +141,8 @@ export default function BathroomRemodeling() {
     document.title = "Bathroom Remodeling Somerset County NJ | Starting at $15K | Supreme Builds";
     document.querySelector('meta[name="description"]')?.setAttribute("content", "Expert bathroom remodeling in Somerset County, NJ. From quick refreshes at $15K to luxury spa bathrooms. Fully licensed, transparent pricing, 2-year warranty. Get your free pricing range today.");
     return () => {
-      document.title = "Supreme Builds | Bathroom, Kitchen & Basement Remodeling in Somerset County, NJ";
-      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed home remodelers in Bridgewater NJ. Expert bathroom, kitchen, and basement transformations with transparent pricing and no surprises. Book a free 15-min fit call today!");
+      document.title = "Home Remodeling Contractor | Somerset County NJ | Supreme Builds";
+      document.querySelector('meta[name="description"]')?.setAttribute("content", "Licensed general contractor serving Somerset & Middlesex County NJ. Kitchen remodeling, bathroom renovation & basement finishing. Supreme Builds Construction LLC.");
     };
   }, []);
 
