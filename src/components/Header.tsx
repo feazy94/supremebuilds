@@ -7,6 +7,7 @@ const services = [
   { name: "Bathroom Remodeling", href: "/bathroom-remodeling" },
   { name: "Kitchen Remodeling", href: "/kitchen-remodeling" },
   { name: "Basement Remodeling", href: "/basement-remodeling" },
+  { name: "Home Additions", href: "/home-additions" },
 ];
 
 const towns = [

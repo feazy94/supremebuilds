@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import BathroomRemodeling from "./pages/BathroomRemodeling";
 import KitchenRemodeling from "./pages/KitchenRemodeling";
 import BasementRemodeling from "./pages/BasementRemodeling";
+import HomeAdditions from "./pages/HomeAdditions";
 import TownLandingPage from "./pages/TownLandingPage";
 import OurProcess from "./pages/OurProcess";
 import Projects from "./pages/Projects";
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/bathroom-remodeling" element={<BathroomRemodeling />} />
           <Route path="/kitchen-remodeling" element={<KitchenRemodeling />} />
           <Route path="/basement-remodeling" element={<BasementRemodeling />} />
+          <Route path="/home-additions" element={<HomeAdditions />} />
           
           {/* Town Landing Pages */}
           {towns.map((town) => (
