@@ -31,6 +31,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <CanonicalTag />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/bathroom-remodeling" element={<BathroomRemodeling />} />
