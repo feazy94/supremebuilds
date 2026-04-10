@@ -21,7 +21,7 @@ import CountyLandingPage from "./pages/CountyLandingPage";
 
 const queryClient = new QueryClient();
 
-const towns = ["bridgewater", "hillsborough", "warren", "somerville", "basking-ridge", "bernardsville", "watchung", "green-brook", "bound-brook", "raritan"];
+const towns = ["bridgewater", "hillsborough", "warren", "somerville", "basking-ridge", "bernardsville", "watchung", "green-brook", "bound-brook", "raritan", "manville", "bedminster", "edison", "princeton", "montgomery", "north-brunswick", "south-brunswick", "piscataway"];
 
 const App = () => (
   <QueryClientProvider client={queryClient}>

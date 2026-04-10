@@ -22,6 +22,14 @@ const towns = [
   { name: "Green Brook", href: "/bathroom-remodeling-green-brook-nj" },
   { name: "Bound Brook", href: "/bathroom-remodeling-bound-brook-nj" },
   { name: "Raritan", href: "/bathroom-remodeling-raritan-nj" },
+  { name: "Manville", href: "/bathroom-remodeling-manville-nj" },
+  { name: "Bedminster", href: "/bathroom-remodeling-bedminster-nj" },
+  { name: "Edison", href: "/bathroom-remodeling-edison-nj" },
+  { name: "Princeton", href: "/bathroom-remodeling-princeton-nj" },
+  { name: "Montgomery", href: "/bathroom-remodeling-montgomery-nj" },
+  { name: "North Brunswick", href: "/bathroom-remodeling-north-brunswick-nj" },
+  { name: "South Brunswick", href: "/bathroom-remodeling-south-brunswick-nj" },
+  { name: "Piscataway", href: "/bathroom-remodeling-piscataway-nj" },
 ];
 
 export default function Header() {
