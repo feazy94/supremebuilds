@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useCanonical } from "@/hooks/useCanonical";
+import { ArrowRight, Star, Phone, Calendar, ChevronRight } from "lucide-react";
 import { ArrowRight, Star, Phone, Calendar, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
