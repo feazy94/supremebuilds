@@ -16,7 +16,7 @@ const projects = [
   { id: 3, title: "Entertainment Basement", location: "Hillsborough, NJ", type: "basement", image: basementRemodel },
   { id: 4, title: "Spa-Like Bathroom", location: "Somerville, NJ", type: "bathroom", image: bathroomMarble },
   { id: 5, title: "Open Concept Kitchen", location: "Basking Ridge, NJ", type: "kitchen", image: kitchenNavy },
-  { id: 6, title: "Home Office Basement", location: "Bernardsville, NJ", type: "basement", image: basementFireplace },
+  { id: 6, title: "Home Office Basement", location: "Bernardsville, NJ", type: "basement", image: basementOffice },
 ];
 
 const filters = ["all", "bathroom", "kitchen", "basement"];
