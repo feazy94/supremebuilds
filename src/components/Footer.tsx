@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const services = [
   { name: "Bathroom Remodeling", href: "/bathroom-remodeling" },
@@ -29,13 +30,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-accent rounded-md flex items-center justify-center">
-                <span className="text-accent-foreground font-display font-bold text-xl">SB</span>
-              </div>
-              <div>
-                <div className="font-display text-xl font-semibold">Supreme Builds</div>
-                <div className="text-primary-foreground/70 text-xs tracking-wider">CONSTRUCTION</div>
-              </div>
+              <img src={logo} alt="Supreme Builds Construction" className="h-12 w-auto" />
             </div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
               Somerset County's trusted home remodeling experts. Licensed, insured, and committed to delivering exceptional craftsmanship.
