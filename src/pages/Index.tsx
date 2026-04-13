@@ -69,7 +69,6 @@ const towns = [
   "Green Brook",
   "Bound Brook",
   "Raritan",
-  "Test",
 ];
 
 export default function Index() {
