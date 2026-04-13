@@ -46,13 +46,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20 px-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-accent rounded-md flex items-center justify-center">
-              <span className="text-accent-foreground font-display font-bold text-xl">SB</span>
-            </div>
-            <div className="hidden sm:block">
-              <div className="text-primary-foreground font-display text-xl font-semibold">Supreme Builds</div>
-              <div className="text-primary-foreground/70 text-xs tracking-wider">CONSTRUCTION</div>
-            </div>
+            <img src={logo} alt="Supreme Builds Construction" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
