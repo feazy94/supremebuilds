@@ -156,7 +156,7 @@ export default function Contact() {
                   Book a 15-minute project fit call directly with our team.
                 </p>
                 <Button variant="gold" className="w-full" asChild>
-                  <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
+                  <a href="tel:+17323478594">
                     Book a Call
                   </a>
                 </Button>
