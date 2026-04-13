@@ -69,9 +69,16 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
-              <li className="text-primary-foreground/50 text-sm pt-2">Coming Soon:</li>
-              <li className="text-primary-foreground/50 text-sm">• Home Additions</li>
-              <li className="text-primary-foreground/50 text-sm">• ADU / In-Law Suites</li>
+              <li>
+                <Link to="/home-additions" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Home Additions
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  ADU / In-Law Suites
+                </Link>
+              </li>
             </ul>
           </div>
 
