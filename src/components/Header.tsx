@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const services = [
   { name: "Bathroom Remodeling", href: "/bathroom-remodeling" },
@@ -45,9 +46,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20 px-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-accent rounded-md flex items-center justify-center">
-              <span className="text-accent-foreground font-display font-bold text-xl">SB</span>
-            </div>
+            <img src={logo} alt="Supreme Builds logo" className="h-11 w-auto" />
             <div className="hidden sm:block">
               <div className="text-primary-foreground font-display text-xl font-semibold">Supreme Builds</div>
               <div className="text-primary-foreground/70 text-xs tracking-wider">CONSTRUCTION</div>
