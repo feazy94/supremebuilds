@@ -182,7 +182,7 @@ export default function BathroomRemodeling() {
                 <ArrowRight className="w-5 h-5" />
               </Button>
               <Button variant="outlineWhite" size="xl" asChild>
-                <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
+                <a href="tel:+17323478594">
                   <Calendar className="w-5 h-5" />
                   Book 15-Min Fit Call
                 </a>
