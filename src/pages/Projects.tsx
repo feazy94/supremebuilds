@@ -9,7 +9,6 @@ import beforeAfterBathroom from "@/assets/before-after-bathroom.jpg";
 import basementFireplace from "@/assets/basement-fireplace.png";
 import kitchenNavy from "@/assets/kitchen-navy.png";
 import bathroomMarble from "@/assets/bathroom-marble.png";
-import basementOffice from "@/assets/basement-office.png";
 
 const projects = [
   { id: 1, title: "Master Bathroom Transformation", location: "Bridgewater, NJ", type: "bathroom", image: heroBathroom },
@@ -18,7 +17,6 @@ const projects = [
   { id: 4, title: "Spa-Like Bathroom", location: "Somerville, NJ", type: "bathroom", image: bathroomMarble },
   { id: 5, title: "Open Concept Kitchen", location: "Basking Ridge, NJ", type: "kitchen", image: kitchenNavy },
   { id: 6, title: "Home Office Basement", location: "Bernardsville, NJ", type: "basement", image: basementFireplace },
-  { id: 7, title: "Home Office Basement", location: "Bridgewater, NJ", type: "basement", image: basementOffice },
 ];
 
 const filters = ["all", "bathroom", "kitchen", "basement"];
