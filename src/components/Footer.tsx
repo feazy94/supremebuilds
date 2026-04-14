@@ -10,7 +10,9 @@ const services = [
 
 const towns = [
   "Bridgewater", "Hillsborough", "Warren", "Somerville", "Basking Ridge",
-  "Bernardsville", "Watchung", "Green Brook", "Bound Brook", "Raritan"
+  "Bernardsville", "Watchung", "Green Brook", "Bound Brook", "Raritan",
+  "Manville", "Bedminster", "Edison", "Princeton", "Montgomery",
+  "North Brunswick", "South Brunswick", "Piscataway"
 ];
 
 const company = [
